@@ -9,6 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
@@ -22,16 +23,29 @@ func init() {
 
 // POST /newentry
 func CreateBlog(c *gin.Context) {
+	apikeyCookie, err := c.Request.Cookie("api_key")
+	if err != nil {
+		c.AbortWithStatus(http.StatusNotFound)
+		return
+	}
+
+	if apikeyCookie.Value != configs.EnvApiKey() {
+		c.AbortWithStatus(http.StatusNotFound)
+		return
+	}
+
 	var blog models.Blog
 	if err := c.Bind(&blog); err != nil {
 		c.AbortWithStatus(http.StatusBadRequest)
 		return
 	}
 
+	blog.Date = primitive.NewDateTimeFromTime(time.Now())
+
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
-	_, err := blogCollection.InsertOne(ctx, blog)
+	_, err = blogCollection.InsertOne(ctx, blog)
 	if err != nil {
 		c.AbortWithStatus(http.StatusInternalServerError)
 		return
@@ -42,7 +56,7 @@ func CreateBlog(c *gin.Context) {
 
 // GET /entries
 func GetAllBlogs(c *gin.Context) {
-	var blogs []models.Blog
+	blogs := []models.Blog{}
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
@@ -63,5 +77,5 @@ func GetAllBlogs(c *gin.Context) {
 		blogs = append(blogs, blog)
 	}
 
-	c.IndentedJSON(http.StatusOK, blogs)
+	c.JSON(http.StatusOK, blogs)
 }
