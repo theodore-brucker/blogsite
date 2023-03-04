@@ -4,7 +4,7 @@ function FetchAPI() {
     const [blogs, setBlogs] = useState([]);
 
     const fetchData = async () => {
-      const response = await fetch("http://localhost:8000/api/entries")
+      const response = await fetch("http://theobrucker.us/api/entries")
       const data = await response.json()
       setBlogs(data)
     }
