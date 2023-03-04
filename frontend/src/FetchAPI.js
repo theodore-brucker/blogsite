@@ -4,7 +4,7 @@ function FetchAPI() {
     const [blogs, setBlogs] = useState([]);
 
     const fetchData = async () => {
-      const response = await fetch("http://localhost:8000/entries")
+      const response = await fetch("http://localhost:8000/api/entries")
       const data = await response.json()
       setBlogs(data)
     }
@@ -12,7 +12,7 @@ function FetchAPI() {
     useEffect(() => {
       fetchData()
     }, [])
- 
+
     return blogs.map(blog =>
       <li key={blog.date}>
         <h1>
