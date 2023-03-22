@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func BlogRoute(router *gin.Engine) {
+func BlogRoute(router *gin.RouterGroup) {
 	router.POST("/newentry", controllers.CreateBlog)
 	router.GET("/entries", controllers.GetAllBlogs)
 }

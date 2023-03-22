@@ -26,11 +26,13 @@ func CreateBlog(c *gin.Context) {
 	apikeyCookie, err := c.Request.Cookie("api_key")
 	if err != nil {
 		c.AbortWithStatus(http.StatusNotFound)
+		println("cookie error")
 		return
 	}
 
 	if apikeyCookie.Value != configs.EnvApiKey() {
 		c.AbortWithStatus(http.StatusNotFound)
+		println("api_key error")
 		return
 	}
 

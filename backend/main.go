@@ -11,7 +11,8 @@ func main() {
 	r := gin.Default()
 	r.Use(cors.Default())
 
-	routes.BlogRoute(r)
+	blogRoutes := r.Group("/api")
+	routes.BlogRoute(blogRoutes)
 
 	r.Run("localhost:8000")
 }
