@@ -1,0 +1,12 @@
+nav {
+    display: flex;
+    background-color: hsl(198, 25%, 23%);
+    padding: 10px 200px;
+    justify-content: space-between;
+
+    a {
+        font-size: 1.5rem;
+        padding: 10px;
+        color: hsl(40, 71%, 39%);
+    }
+}
