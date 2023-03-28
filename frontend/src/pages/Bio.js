@@ -27,18 +27,6 @@ const Bio = () => {
         Student Researcher <br />
         <a href="https://www.sepidehghanavati.com/research">PERC Lab</a>
       </div>
-
-      {/* <h2>Socials</h2>
-      <body>
-        <a href="https://www.linkedin.com/in/theobrucker">LinkedIn</a> <br />
-        <a href="https://github.com/theodore-brucker">GitHub</a> <br />
-      </body> */}
-
-      <div class="content">
-        <h2>Get in touch with me</h2>
-        Via email: theodore.brucker@maine.edu <br />
-        <a href="https://www.linkedin.com/in/theobrucker">Via LinkedIn</a>
-      </div>
     </span>
   );
 };
