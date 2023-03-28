@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../styles/pages/_bio.scss";
+import styles from "../styles/pages/_experience.scss";
 
-const Bio = () => {
+const Experience = () => {
   return (
     <span style={styles}>
       <div class="content">
@@ -31,4 +31,4 @@ const Bio = () => {
   );
 };
 
-export default Bio;
+export default Experience;

@@ -9,7 +9,7 @@ const Banner = () => {
         <Logo />  <br/>
         <ul class="navbar">
           <a href="/home">Home</a>
-          <a href="/bio">Bio</a>
+          <a href="/experience">Experience</a>
           <a href="/portfolio">Portfolio</a>
           <a href="/blog">Blog</a>
         </ul>
