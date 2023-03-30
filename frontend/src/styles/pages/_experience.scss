@@ -1,0 +1,25 @@
+:root {
+    background-color: #dddddd;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    font-size: 16px;
+    color: #aa7b1d;
+
+    h2 {
+        color: hsl(198, 25%, 23%);
+    }
+
+    div.content {
+        height: auto;
+        background-color: #bbb5a6;
+        color: #202020;
+        margin: 20px, 10px;
+        padding: 10px;
+        border: 20px solid #dddddd;
+        width: auto;
+        border-style: solid none;
+    }
+}

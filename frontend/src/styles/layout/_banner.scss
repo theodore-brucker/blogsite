@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    background-color: hsl(198, 25%, 23%);
+    justify-content: space-between;
+
+    a {
+        font-size: 1.5rem;
+        color: hsl(40, 71%, 39%);
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #3a3a3a;
+    }
+
+    ul.navbar {
+        text-align: left;
+        display: inline-block;
+    }
+
+    svg{
+        display: block;
+        width: 400px;
+        height: 200px;
+    }
+
+    div.container {
+        justify-content: center;
+    }
+}

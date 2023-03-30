@@ -1,0 +1,39 @@
+:root {
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+main {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
