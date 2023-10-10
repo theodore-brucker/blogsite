@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <span style={styles}>
       <div class="content">
-        <h2>University of Maine</h2>
+        <h2>Education - University of Maine</h2>
         Graduating in May of 2024 with a BS in Computer Science <br />
         Dean's List: 2021, 2022 <br /> <br />
         Coursework: Discrete Structures, Computer Architecture,
@@ -15,7 +15,7 @@ const Experience = () => {
       </div>
 
       <div class="content">
-        <h2>Systems Engineering</h2>
+        <h2>Current Employment - Systems Engineering</h2>
         SOC Analyst performing incident monitoring with and
         maintenance of FortiSIEM. Also performing security audits and threat research.
         <br />
@@ -23,9 +23,19 @@ const Experience = () => {
       </div>
 
       <div class="content">
-        <h2>Privacy Engineering and Regulatory Compliance Lab </h2>
-        Student Researcher <br />
-        <a href="https://www.sepidehghanavati.com/research">PERC Lab</a>
+        <h2>Research Interests - Privacy Engineering and Regulatory Compliance Lab </h2>
+        Student Researcher focusing on enabling security and privacy preserving practices<br />
+        <a href="https://www.sepidehghanavati.com/research">Info about PERC Lab</a>
+        <h3>Publications</h3>
+        <a href="https://arxiv.org/ftp/arxiv/papers/2306/2306.11174.pdf">[1]</a>
+        Evaluating Privacy Questions From Stack Overflow: Can ChatGPT Compete?
+        <br />
+      </div>
+
+      <div class="content">
+        <h2>Certifications</h2>
+        CompTIA Security+ 
+        <br />
       </div>
     </span>
   );

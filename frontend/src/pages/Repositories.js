@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/pages/_portfolio.scss";
+import "../styles/pages/_repositories.scss";
 
 function GithubRepos() {
   const [repos, setRepos] = useState([]);

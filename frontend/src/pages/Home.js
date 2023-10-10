@@ -10,9 +10,10 @@ const Home = () => {
 
       <div class="content">
         <h2>What do I do?</h2>
-        Senior approaching a BS in Computer Science at the University of Maine
+        Studying towards my BS in Computer Science at the University of Maine
         in Orono. <br />
-        SOC Analyst for Systems Engineering
+        SOC Technician for Systems Engineering <br />
+        Researcher in Information Privacy
       </div>
 
       <div class="content">
