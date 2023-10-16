@@ -4,15 +4,15 @@ const Home = () => {
   return (
     <span>
       <div class="content">
-        <h2>Who am I?</h2>
+        <h2>Intro</h2>
         My name is Theo Brucker and I am a computer science major working in information privacy and security
       </div>
 
       <div class="content">
-        <h2>What do I do?</h2>
-        Senior approaching a BS in Computer Science at the University of Maine
-        in Orono. <br />
-        SOC Analyst for Systems Engineering
+        <h2>About Me</h2>
+        Senior working towards a BS in Computer Science at the University of Maine
+        in Orono. Expected Graduation in May 2024 <br />
+        SOC Technician for Systems Engineering
       </div>
 
       <div class="content">
