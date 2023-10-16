@@ -9,6 +9,11 @@ const Home = () => {
       </div>
 
       <div class="content">
+        <h2>What do I do?</h2>
+        Studying towards my BS in Computer Science at the University of Maine
+        in Orono. <br />
+        SOC Technician for Systems Engineering <br />
+        Researcher in Information Privacy
         <h2>About Me</h2>
         Senior working towards a BS in Computer Science at the University of Maine
         in Orono. Expected Graduation in May 2024 <br />

@@ -10,7 +10,7 @@ const Banner = () => {
         <ul class="navbar">
           <a href="/home">Home</a>
           <a href="/experience">Experience</a>
-          <a href="/portfolio">Portfolio</a>
+          <a href="/repositories">Repositories</a>
           <a href="/blog">Blog</a>
         </ul>
       </div>
