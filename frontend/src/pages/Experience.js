@@ -7,7 +7,7 @@ const Experience = () => {
       <div class="content">
         <h2>University of Maine</h2>
         Graduating in May of 2024 with a BS in Computer Science <br />
-        Dean's List: 2021, 2022 <br /> <br />
+        Dean's List: 2022, 2023 <br /> <br />
         Coursework: Discrete Structures, Computer Architecture,
         Operating Systems, Programming Languages, <br />
         Data Structures and Algorithms, Introduction to Software Engineering,

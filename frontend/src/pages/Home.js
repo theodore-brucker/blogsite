@@ -5,7 +5,7 @@ const Home = () => {
     <span>
       <div class="content">
         <h2>Who am I?</h2>
-        My name is Theo Brucker and I am a computer scientist
+        My name is Theo Brucker and I am a computer science major working in information privacy and security
       </div>
 
       <div class="content">
